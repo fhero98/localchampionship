@@ -1,0 +1,21 @@
+import	sqlite3;	
+from	tkinter	import	*	
+from	tkinter	import	ttk
+def makeform(root,	fields):	
+			entries	=	{};	
+			for	field	in	fields:	
+						row	=	Frame(root);	
+						lab	=	Label(row,	
+						width=12,	text=field+":	",	anchor='w');	
+						ent	=	Entry(row);	
+						ent.insert(0,"0");	
+						row.pack(side	=	TOP,	fill	=	X,	padx	=	5	,	pady	=	5);	
+						lab.pack(side	=	LEFT);	
+						ent.pack(side	=	RIGHT,	expand	=	YES,	fill	=	X);	
+						entries[field]	=	ent;	
+			return	entries;
+			
+def closeall():	
+			conn.commit();	
+			conn.close();	
+			root.quit();	
