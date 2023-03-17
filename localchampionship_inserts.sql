@@ -32,7 +32,7 @@ INSERT INTO PROPONEITAI VALUES('2011','1757','2018-08-01','2023-08-01');
 INSERT INTO DIAITITIS VALUES ('7100','Andrianopoulos Antonis','patra','1h katigoria');
 INSERT INTO DIAITITIS VALUES ('7200','Anastasopoulos Antonis','patra','1h katigoria');
 
---AGONAS
+--AGONAS 
 INSERT INTO AGONAS VALUES ('1','Axaiki','Axaikos Saravaliou','2022-03-01 15:00');
 INSERT INTO AGONAS VALUES ('2','Axaikos Saravaliou','Axaiki','2022-05-05 17:00');
 
