@@ -392,7 +392,7 @@ def q2():
     tree.column("#2", anchor=tk.CENTER)
     tree.heading("#2", text="skor_entos_edras_omada")
     cur1 = conn.cursor()
-    cur1.execute("SELECT entos_edras_omada,skor_entos_edras_omada FROM AGONAS as a  JOIN SKORAREI as s on s.arithmos_agonistikis=a.arithmos_agonistikis "
+    cur1.execute("SELECT entos_edras_omada,sum(skor_entos_edras_omada) FROM AGONAS as a  JOIN SKORAREI as s on s.arithmos_agonistikis=a.arithmos_agonistikis "
                  "ORDER BY entos_edras_omada,skor_entos_edras_omada DESC;")
     rows = cur1.fetchall()
     for row in rows:
@@ -410,7 +410,7 @@ def q3():
     tree.column("#2", anchor=tk.CENTER)
     tree.heading("#2", text="skor_ektos_edras_omada")
     cur1 = conn.cursor()
-    cur1.execute("SELECT ektos_edras_omada,skor_ektos_edras_omada FROM AGONAS as a  JOIN SKORAREI as s on s.arithmos_agonistikis=a.arithmos_agonistikis "
+    cur1.execute("SELECT ektos_edras_omada,sum(skor_ektos_edras_omada) FROM AGONAS as a  JOIN SKORAREI as s on s.arithmos_agonistikis=a.arithmos_agonistikis "
                  "ORDER BY skor_ektos_edras_omada DESC")
     rows = cur1.fetchall()
     for row in rows:
