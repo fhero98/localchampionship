@@ -1,1 +1,1 @@
-# Μετα το κατεβασμα των αρχιων ενσωματονουμε στο localchampionship.py αρχειο τα insert και schema  στον ιδιο φακελο
+A dynamic local GUI app for browsing any relational database, case oriented to fit a localchampionship needs
